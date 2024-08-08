@@ -1,0 +1,40 @@
+﻿@*@using DoctorAppointmentBooking.DataAccess.Models;
+@model Appointment;
+@{
+    using (Html.BeginForm("EditAppointment", "Patient"))
+    {
+        <div class="row">
+            <div class="col-md-2">
+                @Html.LabelFor(m => m.DoctorId)
+            </div>
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.DoctorId)
+            </div>
+        </div>
+        /*
+        <div class="row">
+            <div class="col-md-2">
+                @Html.LabelFor(m => m.Date)
+            </div>
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.Date)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                @Html.LabelFor(m => m.Time)
+            </div>
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.Time)
+                <input type="hidden" value="@Model.AppointmentId" name="AppointmentId"/>
+            </div>
+        </div>
+        */
+        <div class="row">
+            <div class="col-md-2">
+                <button type="submit">Update</button>
+            </div>
+        </div>
+    }
+    <a href="/Patient/Homepage"><button type="button" style="border-radius: 3px; color: rgb(38, 37, 37); background-color:rgb(247, 191, 191);border: 1px solid rgb(251, 207, 207); text-align:center; padding:5px;">Back</button></a>
+}*@

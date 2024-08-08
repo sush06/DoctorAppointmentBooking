@@ -1,0 +1,109 @@
+﻿<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+      <style>
+       .loginClass{
+        border: 1px solid lightgray;
+                 border-radius:3px ; 
+                 border-color: rgb(121, 121, 121);
+                 width: 250px;
+                 height:27px;
+        }
+        .docregClassimg{
+                background-image: url("/images/registration.jpg");
+                background-repeat: no-repeat;
+                width:1090px;
+                height:700px;
+                align-items: center;
+                padding-left: 0%;   
+                opacity: 0.7;
+            }
+    </style>
+    </head>
+    <body>
+
+         <header>
+                    <div class="container mt-3">
+                    <h2><img src="/images/logo1.jpeg" width="70" height="70" alt="logo">DOCTOR APPOINTMENT BOOKING</h2>
+                     <br/>
+                     </div>
+                </header>
+                <!-- Nav tabs -->
+  
+         <ul class="nav nav-tabs" role="tablist">
+
+             <li class="nav-item">
+                 <a class="nav-link" href="/Home/Index">Home</a>
+             </li>
+
+             <li class="nav-item">
+                 <a class="nav-link" href="/Doctor/Insert">Doctor Registration</a>
+             </li>
+
+             <li class="nav-item">
+                 <a class="nav-link" href="/Patient/Insert">Patient Registration</a>
+             </li>
+
+             <li class="nav-item">
+                 <a class="nav-link active" href="/Doctor/Login">Doctor Login</a>
+             </li>
+
+             <li class="nav-item">
+                 <a class="nav-link" href="/Patient/Login">Patient Login</a>
+             </li>
+
+             <li class="nav-item">
+                 <a class="nav-link" href="#sug">Suggestions and Feedback</a>
+             </li>
+         </ul>
+
+                 <!--tab content-->
+                  <div class="tab-content">
+
+                       <div id="doctorlogin" class="container" style="border: 0px; margin: 0%;"><br>
+                          <div class="docregClassimg"><br>
+        
+                                                      <div style="padding:100px; color:rgb(0, 0, 0);height:850px;">
+
+                                                          <h3> Welcome Doctor !</h3><br><br>
+                                                          <form method="post" action="/Doctor/Login" onsubmit="return myFunction()">
+                                                              <lable>Email: </lable><br>
+                                                              <input type="email" id="DoctorEmail" name="DoctorEmail" placeholder="Email" class="loginClass" required /><br><br>
+                                                              <lable>Password : </lable><br>
+                                                              <input type="password" id="DoctorPassword" name="DoctorPassword" placeholder="Password" class="loginClass" required /><br><br>
+                                                              <div style="padding-left:100px;">
+                                                                  <button type="submit" onClick=myFunction() style="border-radius: 3px; color: white; background-color:dodgerblue;border: 1px solid dodgerblue; text-align:center; padding:5px; ">Login</button>
+                                                              </div>
+                                                          </form><br><br>
+                                                          <h4>Login and serve the people.</h4>
+                                                          <div>Don't have an Account ? Click here to Register!'</div>
+                                                          <a href="/Doctor/Insert"><button type="button" style="border-radius: 3px; color: rgb(38, 37, 37); background-color:rgb(247, 191, 191);border: 1px solid rgb(251, 207, 207); text-align:center; padding:5px;">Registration Page</button></a>
+                                                      </div>
+           </div> 
+           <script>
+           function myFunction() {
+               var LoginID = document.getElementById("DoctorEmail").value;
+               var Password = document.getElementById("DoctorPassword").value;
+            
+            if(LoginID != "" && Password != "")
+            {
+                window.location.replace(/Doctor/Homepage);  
+                //alert("You Are a ADMIN");   
+            
+            }
+            else {
+               alert("Invalid information");
+                return ;
+             }
+            }
+        </script>
+       </div>          
+                        </div><br><br /> 
+    </body>
+
+</html>

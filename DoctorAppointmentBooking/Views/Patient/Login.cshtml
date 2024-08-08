@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .docregClassimg {
+            background-image: url("/images/registration.jpg");
+            background-repeat: no-repeat;
+            width: 1420px;
+            height: 700px;
+            align-items: center;
+            padding-left: 0%;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container mt-3">
+            <h2><img src="/images/logo1.jpeg" width="70" height="70" atl="logo">DOCTOR APPOINTMENT BOOKING</h2>
+            <br />
+        </div>
+    </header>
+    <!-- Nav tabs -->
+
+    <ul class="nav nav-tabs" role="tablist">
+
+        <li class="nav-item">
+            <a class="nav-link" href="/Home/Index">Home</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="/Doctor/Insert">Doctor Registration</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="/Patient/Insert">Patient Registration</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="/Doctor/Login">Doctor Login</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link active" href="/Patient/Login">Patient Login</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#sug">Suggestions and Feedback</a>
+        </li>
+    </ul>
+
+    <!--tab content-->
+    <div class="tab-content">
+
+        <div id="patientlogin" class="container" style="border: 0px; margin: 0%;">
+            <br>
+
+            <div class="docregClassimg">
+
+                <div style="padding:100px; color:rgb(0, 0, 0)">
+
+                    <h3> Welcome !!</h3><br><br>
+                    <form onsubmit=" return validation()" action="/Patient/Login" method="post">
+                        <label for="PatientEmail">Email ID:</label><br>
+                        <input id="PatientEmail" name="PatientEmail" type="text" placeholder="Email" class="loginClass"><br><br>
+                        <label for="PatientPassword">Password:</label><br>
+                        <input id="PatientPassword" name="PatientPassword" type="password" placeholder="Password" class="loginClass"><br><br>
+                        <div style="padding-left:50px;">
+                            <button type="submit" onclick="validation()" style="border-radius: 3px; color: white; background-color:dodgerblue;border: 1px solid dodgerblue; text-align:center; padding:5px; color:rgb(0, 0, 0)">Login</button>
+
+                        </div>
+                    </form><br><br>
+                    <h4>Login and get the Cutting-Edge Treatment with top doctors.</h4>
+                    <div>
+                        Don't have an Account ? Click here to Register!'
+                    </div>
+                    <a href="/Patient/Insert"><button type="button" style="border-radius: 3px; color: rgb(38, 37, 37); background-color:rgb(247, 191, 191);border: 1px solid rgb(251, 207, 207); text-align:center; padding:5px;">Registration Page</button></a>
+                    <script>
+                        function validation() {
+                            var login = document.getElementById("PatientEmail");
+                            var password = document.getElementById("PatientPassword");
+                            if (login.value == "" || password.value == "") {
+                                alert("please enter all the details");
+                                return false
+                            }
+                            else {
+                                return true;
+                            }
+                        }
+                    </script>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

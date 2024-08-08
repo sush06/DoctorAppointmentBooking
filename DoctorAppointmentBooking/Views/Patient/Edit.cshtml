@@ -1,0 +1,68 @@
+@using DoctorAppointmentBooking.DataAccess.Models;
+@model Patient;
+@{
+    using (Html.BeginForm("Edit", "Patient"))
+    {
+        <div class="row">
+            <div class="col-md-2">
+                @Html.LabelFor(m => m.PatientName)
+            </div>
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.PatientName)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                @Html.LabelFor(m => m.PatientEmail)
+            </div>
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.PatientEmail)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                @Html.LabelFor(m => m.PatientPassword)
+            </div>
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.PatientPassword)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                @Html.LabelFor(m => m.Dob)
+            </div>
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.Dob)
+            </div>
+        </div>
+        /* 
+            <div class="row">
+                <div class="col-md-2">
+                    @Html.LabelFor(m => m.Age)
+                </div>
+                <div class="col-md-6">
+                    @Html.TextBoxFor(m => m.Age)
+                </div>
+            </div>
+        */
+
+        <div class="row">
+            <div class="col-md-2">
+                @Html.LabelFor(m => m.Disease)
+            </div>
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.Disease)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    }
+    <a href="/Patient/Homepage"><button type="button" style="border-radius: 3px; color: rgb(38, 37, 37); background-color:rgb(247, 191, 191);border: 1px solid rgb(251, 207, 207); text-align:center; padding:5px;">Back</button></a>
+}

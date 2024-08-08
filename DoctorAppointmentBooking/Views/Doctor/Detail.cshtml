@@ -1,0 +1,33 @@
+@using DoctorAppointmentBooking.DataAccess.Models;
+@model Doctor;
+@{
+    <div class="row">
+        <div class="col-md-3">Doctor Name</div>
+        <div class="col-md-9">@Model.DoctorName</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">Email</div>
+        <div class="col-md-9">@Model.DoctorEmail</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">Age</div>
+        <div class="col-md-9"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">Specialization</div>
+        <div class="col-md-9">@Model.Specialization</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">Experience</div>
+        <div class="col-md-9">@Model.Experience</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">Start Time</div>
+        <div class="col-md-9"></div>
+    </div>
+                <div class="row">
+                    <div class="col-md-3">End Time</div>
+                    <div class="col-md-9"></div>
+                </div>
+        <a href="/Doctor/Homepage"><button type="button" style="border-radius: 3px; color: rgb(38, 37, 37); background-color:rgb(247, 191, 191);border: 1px solid rgb(251, 207, 207); text-align:center; padding:5px;">Back</button></a>
+}

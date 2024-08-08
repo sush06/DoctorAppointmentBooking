@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Doctor appointment booking</title>
+  <link rel="icon" type="image/x-icon" href="/images/logo1.jpeg">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+        <style>
+                body{
+                font-family: Arial, sans-serif;
+                letter-spacing: 2px;
+                line-height: 1.9;
+                margin:0px;
+                border:0px;
+            
+               }
+               .homeClassimg{
+                background-image: url("/images/doctor.jpg");
+                background-repeat: no-repeat;
+                width:1090px;
+                height:700px;
+                align-items: center;
+                padding-left: 0%;   
+                opacity: 0.7;
+            }
+            .homeClass1
+            {
+                font-family: Arial, sans-serif;
+                float: right;
+                width: 800px;
+                height : 300px;
+                color:black;
+                padding-right: 200px;
+                padding-left: 10px;
+                padding-top: 150px;
+                letter-spacing: 2px;
+                line-height: 1.9;
+                text-align: justify;
+            }
+            th,td
+            {
+               padding: 20px;
+               text-align: center;
+            }
+           table,th,td{
+               border: 1px solid black;
+               border-collapse: collapse;
+               border-color: rgb(208, 232, 247);
+               background-color: rgb(255, 255, 255);
+               color:black;
+               opacity: 0.9;
+               
+               
+           }
+           th{
+            color: rgb(0, 0, 0);
+           
+               
+           }
+           .tableClass{
+               padding-left: 80px;
+               padding-top: 60px;
+               background-color: aqua;
+               width:auto;
+
+           }
+        </style>
+    </head>
+    <body>
+                 <header>
+                    <div class="container mt-3">
+                    <h2><img src="/images/logo1.jpeg" width="70" height="70" atl="logo">DOCTOR APPOINTMENT BOOKING</h2>
+                     <br/>
+                     </div>
+                </header>
+                <!-- Nav tabs -->
+  
+                <ul class="nav nav-tabs" role="tablist">
+
+                   <li class="nav-item">
+                    <a class="nav-link"  href="/Home/Index">Home</a>
+                   </li>
+
+                   <li class="nav-item">
+                    <a class="nav-link "  href="/Doctor/Insert">Doctor Registration</a>
+                   </li>
+
+                   <li class="nav-item">
+                    <a class="nav-link" href="/Patient/Insert">Patient Registration</a>
+                   </li>
+
+                   <li class="nav-item">
+                     <a class="nav-link active" href="/Doctor/Login">Doctor Login</a>
+                   </li>
+  
+                   <li class="nav-item">
+                     <a class="nav-link" href="/Patient/Login">Patient Login</a>
+                   </li>
+      
+                    <li class="nav-item">
+                     <a class="nav-link" href="#sug">Suggestions and Feedback</a>
+                   </li>
+                 </ul><br/>
+                 <!--page content-->
+                 <div class="homeClassimg">
+                <div class="homeClass1">
+                    
+                    <h1>welcome Doctor! </h1><br>
+                    <p> 
+                        Medicine cure diseases but only doctors can cure patients
+                    </p><br>
+                    <p> God can not come for us all the time that's why he sent doctors for us</p><br>
+
+                     <h4>Below are your appointments </h4>
+                </div>
+            </div>
+                 <div style="padding-left: 170px;height:850px;padding-top: 100px; padding-right: 0%;padding-bottom :100px;background-color: rgb(17, 58, 95);">
+
+                     <table>
+                         <tr>
+                             <th>Appointment ID</th>
+                             <th>Patient Name</th>
+                             <th>Doctor Name</th>
+                             <th>Date</th>
+                             <th>time</th>
+                         </tr>
+                         <tr>
+                             <td>1</td>
+                             <td>john</td>
+                             <td>Dr. Ram</td>
+                             <td>12/05/2022</td>
+                             <td>12:00 pm</td>
+                         </tr>
+                         <tr>
+                             <td>2</td>
+                             <td>Ramu</td>
+                             <td>Dr. Ram</td>
+                             <td>12/05/2022</td>
+                             <td>12:30 pm</td>
+                         </tr>
+                         <tr>
+                             <td>3</td>
+                             <td>Sanju</td>
+                             <td>Dr. Ram</td>
+                             <td>12/05/2022</td>
+                             <td>1:00 pm</td>
+                         </tr>
+                         <tr>
+                             <td>4</td>
+                             <td>Ashish</td>
+                             <td>Dr. Ram</td>
+                             <td>13/05/2022</td>
+                             <td>12:30 pm</td>
+                         </tr>
+                         <tr>
+                             <td>5</td>
+                             <td>Sai</td>
+                             <td>Dr. Ram</td>
+                             <td>13/05/2022</td>
+                             <td>12:30 pm</td>
+                         </tr>
+                     </table>
+                     <br>
+                     <a href="/Doctor/Homepage"><button type="button" style="border-radius: 3px; color: rgb(38, 37, 37); background-color:rgb(247, 191, 191);border: 1px solid rgb(251, 207, 207); text-align:center; padding:5px;">Go Back</button></a>
+                     <br>
+
+                 </div>
+
+    </body>
+</html>

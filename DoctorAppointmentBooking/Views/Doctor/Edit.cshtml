@@ -1,0 +1,89 @@
+@using DoctorAppointmentBooking.DataAccess.Models;
+@model Doctor;
+@{
+    using (Html.BeginForm("Edit", "Doctor"))
+    {
+        <div class="row">
+            <div class="col-md-2">
+                @Html.LabelFor(m => m.DoctorName)
+            </div>
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.DoctorName)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                @Html.LabelFor(m => m.DoctorEmail)
+            </div>
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.DoctorEmail)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                @Html.LabelFor(m => m.DoctorPassword)
+            </div>
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.DoctorPassword)
+            </div>
+        </div>
+
+       
+
+        <div class="row">
+            <div class="col-md-2">
+                @Html.LabelFor(m => m.Specialization)
+            </div>
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.Specialization)
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-2">
+                @Html.LabelFor(m => m.Experience)
+            </div>
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.Experience)
+            </div>
+        </div>
+        
+        /*<div class="row">
+            <div class="col-md-2">
+                @Html.LabelFor(m => m.StartTime)
+            </div>
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.StartTime)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                @Html.LabelFor(m => m.EndTime)
+            </div>
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.EndTime)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                @Html.LabelFor(m => m.Day)
+            </div>
+            <div class="col-md-6">
+                @Html.TextBoxFor(m => m.Day)
+            </div>
+        </div>
+        */
+
+        <div class="row">
+            <div class="col-md-2">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    }
+    <a href="/Doctor/Homepage"><button type="button" style="border-radius: 3px; color: rgb(38, 37, 37); background-color:rgb(247, 191, 191);border: 1px solid rgb(251, 207, 207); text-align:center; padding:5px;">Back</button></a>
+}
